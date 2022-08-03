@@ -68,3 +68,27 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+echart data:
+const chartInit = ()=>{
+      //init echarts
+      const myChart = echarts.init(domRef.current)
+      //繪製圖表
+      myChart.setOption({
+        title: {
+          text: 'ECharts 加密貨幣市值'
+        },
+        tooltip:{},
+        xAxis: {
+          data: ['BTC','ETH','USDT','ADA','AVAX','MATIC']
+        },
+        yAxis: {},
+        series: [
+          {
+            name:'市值',
+            type:'bar',
+            data: ['4457.98','2038.49','662.31','173.57','66.94','45.44']
+          }
+        ]
+      })
+    }
