@@ -166,7 +166,7 @@ const Article = () => {
         title={
           <Breadcrumb separator=">">
             <Breadcrumb.Item>
-              <Link to="/home">首頁</Link>
+              <Link to="/:">首頁</Link>
             </Breadcrumb.Item>
             <Breadcrumb.Item>內容管理</Breadcrumb.Item>
           </Breadcrumb>
